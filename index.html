@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KeyCode Finder</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: #4caf50;
+        padding: 20px;
+        text-align: center;
+        color: white;
+      }
+
+      main {
+        max-width: 1300px;
+        margin: 50px auto;
+        text-align: center;
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+
+      .result {
+        text-align: center;
+        max-width: 1300px;
+        height: 300px;
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .result p {
+        display: flex;
+        justify-content: center;
+        font-size: 100px;
+        font-weight: bold;
+      }
+
+      main ul li {
+        list-style: none;
+        display: inline-flex;
+        padding: 10px 50px;
+        margin: 0 50px;
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .result2 p {
+        font-size: 48px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- go to https://www.toptal.com/developers/keycode -->
+    <header>
+      <h1>KeyCode Finder</h1>
+    </header>
+    <main>
+      <div class="result">
+        Javascript Key Code :
+        <p id="keycode"></p>
+      </div>
+
+      <ul>
+        <li>
+          <div class="result2">
+            event.key :
+            <p id="eventkey"></p>
+          </div>
+        </li>
+        <li>
+          <div class="result2">
+            event.location :
+            <p id="eventlocation"></p>
+          </div>
+        </li>
+        <li>
+          <div class="result2">
+            event.code :
+            <p id="eventcode"></p>
+          </div>
+        </li>
+      </ul>
+
+      <script src="script.js"></script>
+    </main>
+  </body>
+</html>
